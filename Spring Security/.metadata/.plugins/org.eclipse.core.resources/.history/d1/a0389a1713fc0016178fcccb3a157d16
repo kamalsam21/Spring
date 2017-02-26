@@ -1,0 +1,23 @@
+package com.samsung.spring.security.mappers;
+
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.Select;
+
+import com.samsung.spring.security.Entity.User;
+
+public interface UserMapper {
+	@Results({
+        @Result(property = "name", column = "username"),
+        @Result(property = "email", column = "email"),
+        @Result(property = "password", column = "password")
+      })
+	@Insert("INSERT INTO user(username, email, password) VALUES"
+			+ "(#{name}, #{email}, #{password})")
+	public void insertUser(User user);
+
+	@Select("SELECT username, email, password FROM user WHERE username = #{name}")
+	public User getUserByName(String name);
+
+}

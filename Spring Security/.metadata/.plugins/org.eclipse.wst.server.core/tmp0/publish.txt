@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Feb 26 20:26:40 IST 2017
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Kamal\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=E\:\\Server\\apache-tomcat-8.0.41\\wtpwebapps\\SpringSecurityDemo\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
+org.eclipse.jst.jee.server\:SpringSecurityDemo=E\:\\Server\\apache-tomcat-8.0.41\\wtpwebapps\\SpringSecurityDemo

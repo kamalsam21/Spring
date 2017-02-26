@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 th:text=${#strings.prepend(title, "Title: ")}>Title : ${title}</h1>
+	<h1 th:text=${#strings.prepend(message, "Message: ")>Message : ${message}</h1>
+</body>
+</html>

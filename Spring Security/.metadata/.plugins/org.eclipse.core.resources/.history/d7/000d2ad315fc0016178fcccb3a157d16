@@ -1,0 +1,14 @@
+package com.samsung.spring.security.Utils;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class Encoder {
+	
+	public static void passwordEncoder(String password) {
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		String hashedPassword = passwordEncoder.encode(password);
+
+		System.out.println("Encoded Password: " + hashedPassword);
+	}
+
+}

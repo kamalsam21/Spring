@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h1 th:text="${'Title: ' + title}">Spring Security Custom Login Form</h1>
+	<h1 th:text="${'Message: ' + message}">This is protected page!</h1>
+
+	<!-- csrt for log out-->
+	<form th:action="@{'/j_spring_security_logout'}" method="post" id="logoutForm">
+	  <input type="hidden"
+		name="${_csrf.parameterName}"
+		value="${_csrf.token}" />
+	</form>
+
+	<script>
+		function formSubmit() {
+			document.getElementById("logoutForm").submit();
+		}
+	</script>
+
+	<a href="javascript:formSubmit()"> Logout </a>
+
+</body>
+</html>

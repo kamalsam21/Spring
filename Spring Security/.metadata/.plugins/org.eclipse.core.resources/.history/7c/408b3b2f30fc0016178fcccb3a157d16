@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h1 th:text="${'Title: ' + title}">Spring Security Custom Login Form</h1>
+	<h1 th:text="${'Message: ' + message}">This is welcome page!</h1>
+	<!-- <h1 th:text="${#strings.prepend(message, 'Message: ')}">This is welcome page!</h1> -->
+</body>
+</html>

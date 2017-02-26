@@ -1,0 +1,17 @@
+package com.samsung.spring.security.Service.Impl;
+
+import com.samsung.spring.security.Entity.User;
+import com.samsung.spring.security.Service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public void insertUser(User user) {
+
+	}
+
+	@Override
+	public User getUserByName(String name) {
+		return null;
+	}
+}

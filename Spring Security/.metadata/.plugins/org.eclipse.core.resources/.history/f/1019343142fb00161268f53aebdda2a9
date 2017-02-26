@@ -1,0 +1,5 @@
+package com.samsung.spring.security.Controller;
+
+public class BaseController {
+
+}

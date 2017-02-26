@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 th:text=${#strings.prepend(title, "Title: ")}>Spring Security Custom Login Form</h1>
+	<h1 th:text=${#strings.prepend(message, "Message: ")>This is welcome page!</h1>
+</body>
+</html>

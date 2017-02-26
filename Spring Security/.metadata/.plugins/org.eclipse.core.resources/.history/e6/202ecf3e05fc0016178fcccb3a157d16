@@ -1,0 +1,17 @@
+package com.samsung.spring.security.Entity;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+public class User {
+	
+	@NotEmpty
+	private String name;
+	
+	private String email;
+	
+	private String password;
+	
+	private String matchingPassword;
+	
+	
+}

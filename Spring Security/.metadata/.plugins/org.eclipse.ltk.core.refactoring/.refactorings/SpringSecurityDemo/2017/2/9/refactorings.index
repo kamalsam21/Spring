@@ -1,0 +1,7 @@
+1488087761291	Rename resource 'index.html'
+1488107421032	Rename field 'name'
+1488107721125	Rename method 'getName'
+1488107739260	Rename method 'setName'
+1488109152098	Rename type 'BaseThymeController'
+1488110625161	Rename method 'getUserName'
+1488110635204	Rename method 'setUserName'

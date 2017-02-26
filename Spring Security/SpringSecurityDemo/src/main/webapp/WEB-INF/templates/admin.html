@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h1 th:text="${'Title: ' + title}">Spring Security Custom Login Form</h1>
+	<h1 th:text="${'Message: ' + message}">This is protected page!</h1>
+
+	csrt for log out
+	<form th:action="@{'/j_spring_security_logout'}" method="post" id="logoutForm">
+	</form>
+
+	<script>
+		function formSubmit() {
+			document.getElementById("logoutForm").submit();
+		}
+	</script>
+
+	<a href="javascript:formSubmit()"> Logout </a>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<!-- <html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h1 th:text="${'Title: ' + title}">Spring Security Custom Login Form</h1>
+	<h1 th:text="${'Message: ' + message}">This is welcome page!</h1>
+	<h1 th:text="${#strings.prepend(message, 'Message: ')}">This is welcome page!</h1>
+</body>
+</html> -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script>
+$(document).ready(function(){
+    $("adminbutton").click(function(){
+        $("welcomeform").submit();
+    });
+});
+</script>
+<style>
+.bgbody {
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/09/08/05/administrator-1188494_960_720.jpg");
+    background-repeat:   no-repeat;
+    background-size:     cover;                      
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position:relative;
+  margin-top:2%;
+  margin-left: 90%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body class="bgbody">
+<form id="welcomeform" th:action="@{'/j_spring_security_logout'}" method="post">
+	<button id="adminbutton" class="button" >LogOut</button>
+</form>
+
+</body>
+</html>

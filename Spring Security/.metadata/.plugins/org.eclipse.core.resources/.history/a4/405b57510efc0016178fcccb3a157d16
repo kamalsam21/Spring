@@ -1,0 +1,5 @@
+package com.samsung.spring.security.mappers;
+
+public interface UserMapper {
+
+}
